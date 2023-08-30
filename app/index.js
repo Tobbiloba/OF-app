@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <View style={styles.container}>
       {/* <UserCard user={users[0]}/>  */}
-      <Link href={'/newPost'} style={{}}>New post +</Link>
+      <Link href={'/newPost'} style={{backgroundColor: 'royalblue', marginVertical: 10, padding: 10, color: 'white', textAlign: 'center', fontWeight: '500', fontSize: 20}}>New post +</Link>
       <FlatList 
         data={users}
         renderItem={({item}) => <UserCard user={item}/>}

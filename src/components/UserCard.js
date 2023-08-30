@@ -6,7 +6,7 @@ const UserCard = ({user}) => {
   // console.log(user.avatar)
     // const user = props.user
   return (
-    <Link href={`/user/${user.id}`} asChild>
+    <Link href={`/user/${user.id}`} asChild style={{marginVertical: 5}}>
       <Pressable>
     <ImageBackground source={{uri: user.coverImage}} style={styles.userCard}>
     <View style={styles.overLay}/>
